@@ -1,0 +1,246 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+.section1, .section2, .section3, .section4, .section5{
+    max-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(000, 0, 50, 0.7);
+}
+.section1{
+    background: url(iron1.jpg) center center fixed;
+}
+.section2{
+    background: url(cap1.jpg) center center fixed;
+}
+.section3{
+    background: url(thor1.jpg) center center fixed;
+}
+.section4{
+    background: url(hulk1.jpg) center center fixed;
+}
+.section5{
+    background: url(black1.jpg) center center fixed;
+}
+
+/*******/
+.data{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+.data .one{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    row-gap: 50px;
+}
+.name h1
+{
+    font-size: 90px;
+    font-family: serif;
+}
+.name p{
+    font-size: 18px;
+    max-width: 60vh;
+    line-height: 1.4;
+}
+.info button{
+padding: 13px 40px;
+border: none;
+background-color: rgb(241, 20, 12);
+color: #fff;
+letter-spacing: 2px;
+}
+.info p{
+    margin-top: 50px;
+    color: rgb(3, 110, 172);
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+
+
+.data .two img{
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+        .data .two img.an1{
+        animation: h1 3s;
+        }
+        @keyframes h1 {
+        0% {left:0px; bottom:500px;}
+        100% {left:0px; bottom:0px;}
+    }
+
+        .data .two img.an2{
+        animation: h2 3s;
+        }
+        @keyframes h2 {
+        0% {left:500px; bottom:0px;}
+        100% {left:0px; bottom:0px;}
+    }
+
+        .data .two img.an3{
+        animation: h3 3s;
+        }
+        @keyframes h3 {
+        0% {left:-500px; bottom:0px;}
+        100% {left:0px; bottom:0px;}
+    }
+
+        .data .two img.an4{
+        animation: h4 3s;
+        }
+        @keyframes h4 {
+            0% {left:0px; bottom:-500px;}
+            100% {left:0px; bottom:0px;}
+    }
+
+ .data .two img.an5{
+        animation: h5 3s;
+        }
+        @keyframes h5 {
+            0% {left:0px; bottom:500px;}
+            100% {left:0px; bottom:0px;}
+    }
+
+.three{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    row-gap: 50px;
+    border-left: 1px solid rgba(000, 0, 50);
+}
+.powers ul{
+    list-style: none;
+}
+.powers ul li{
+    font-size: 20px;
+    padding-top: 20px;
+}
+.powers ul li span{
+    display: block;
+    margin-left: 22px;
+    color: rgb(184, 181, 178);
+    line-height: 1.4;
+    font-size: 18px;
+    max-width: 60vh;
+
+}
+.video iframe{
+    border: none;
+    width: 100%;
+    height: 300px;
+
+}
+
+@media (max-width:1160px){
+        .name h1
+        {
+        font-size: 65px;
+        }
+        .name p{
+        font-size: 16px;
+        }
+        .info button{
+        padding: 10px 30px;}
+        .info p{
+        font-size: 35px;
+        }
+        .powers ul li{
+        font-size: 18px;}
+}
+@media (max-width:1000px){
+    .name h1
+    {
+    font-size: 65px;
+    }
+    .name p{
+    font-size: 17px;
+    max-width: 50vh;
+    }
+    .info button{
+    padding: 10px 30px;}
+    .info p{
+    font-size: 40px;
+
+    }
+    .powers ul li{
+    font-size: 18px;}
+    .powers ul li span{
+        font-size: 17px;
+        max-width: 50vh;
+    
+    }
+    .video iframe{
+        height: 250px;
+    
+    }
+}
+    @media (max-width:850px){
+        .name h1
+    {
+    font-size: 65px;
+    margin-left: 15px;
+    }
+        .name p{
+            font-size: 15px;
+            max-width: 40vh;
+            margin-left: 15px;
+            }
+                .info button{
+              margin-left: 15px;}
+    }
+
+    @media (max-width:750px){
+        .info p{
+            font-size: 30px;
+        
+            }
+    }
+    @media (max-width:600px){
+        .data{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+        }
+        .name h1
+    {
+    font-size: 65px;
+    }
+    .name p{
+    font-size: 18px;
+    max-width: 60vh;
+    }
+    .info button{
+    padding: 10px 30px;}
+    .info p{
+    font-size: 50px;
+    }
+    .powers ul li{
+    font-size: 19px;}
+    .powers ul li span{
+        font-size: 18px;
+        max-width: 60vh;
+    }
+    .video iframe{
+        height: 300px;
+    
+    }
+    .an1,.an4, .an5 {
+        margin-top: -200px;
+        margin-left: 100px;
+    }
+
+}
